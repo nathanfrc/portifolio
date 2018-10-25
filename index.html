@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="site para portifolio de curriculo ">
+    <meta name="author" content="Portifolio Criando Por Nathan Costa ">
+
+    <title>Portfólio</title>
+
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=NTR' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Nathan <span>Costa</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#mainCarousel">Inicial</a>
+					</li>
+					<li>
+                        <a href="#informacao">Informação</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Sumário</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Experiência Profissional</a>
+					</li>
+					<li>
+							<a href="#contact">Contato</a>
+						</li>
+						<li>
+							<a href="curriculo.pdf" target="_blank">Imprimir Curriculo</a>
+						</li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <style>
+    
+    	.navbar-default {
+    		background-color: transparent;
+    		border-color: transparent;
+    		-webkit-transition: all 0.5s ease 0s;
+  			-o-transition: all 0.5s ease 0s;
+  			transition: all 0.5s ease 0s;
+    	}
+    	
+    	.navbar-nav { 
+    		margin-top: 40px;
+    		float: right;
+    	}
+    	
+    	@media screen and (max-width: 767px) {
+    	.navbar-nav {
+    		float: none;
+    		text-align: center;
+    		background: rgba(25, 33, 60, 0.5);
+    	}
+    	}
+    	
+    	.navbar-default .navbar-brand {
+    		margin-top: 40px;
+    		font-size: 28px;
+    		font-family: 'Righteous', cursive;
+    		color: #fff;
+    		letter-spacing: 1px;
+    		-moz-transition:color .5s ease-in;
+   			-o-transition:color .5s ease-in;
+    		-webkit-transition:color .5s ease-in;
+    	}
+    	
+    	.navbar-default .navbar-brand span {
+    		color: #42a5f6;
+    		-moz-transition:color .5s ease-in;
+   			-o-transition:color .5s ease-in;
+    		-webkit-transition:color .5s ease-in;
+    	}
+    	
+    	@media screen and (max-width: 400px) {
+    	.navbar-default .navbar-brand {
+    		font-size: 22px;
+    	}
+    	}
+    	
+    	.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand span:hover {
+    		color: #3D99B8;
+    	}
+    	
+    	.navbar-default .navbar-nav>li>a {
+    		color: #fff;
+    		font-size: 14px;
+    		font-family: 'Noto Sans', sans-serif;
+    		text-transform: uppercase;
+    		letter-spacing: 1px;
+    	}
+    	
+    	.navbar-default .navbar-nav>li>a:hover {
+    		color: #42a5f6;
+    	}
+    	
+    	.navbar-default .navbar-nav>li>a:focus {
+    		color: #42a5f6;
+    	}
+    	
+    	.navbar-default .navbar-toggle {
+    		margin-top: 40px;
+    		border: none;
+    	}
+    	
+		.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+			background: none;
+		}
+    	
+    	.navbar-default .navbar-toggle .icon-bar {
+    		height: 4px;
+    		width: 28px;
+    		background: #42a5f6;
+		}
+    	
+    	.navbar-default.shrink {
+    		background:rgba(25, 33, 60, 0.8)
+		}
+		
+		.navbar-default.shrink .navbar-nav {
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		
+		.navbar-default.shrink .navbar-brand {
+			margin-top: 20px;
+		}
+		
+		.navbar-default.shrink .navbar-toggle {
+			margin-top: 25px;
+		}
+
+    
+    </style>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="mainCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+            <div class="slider_overlay"></div>
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/slide1.jpg');">
+                    <div class="hero">
+                        <hgroup>
+							<h1>Olá, Seja Bem-vindo</h1>
+							
+                            
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+
+            <div class="slider_overlay"></div>
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/slide2.jpg');">
+                    <div class="hero">
+                        <hgroup>
+                            <h1>"Enquanto houver vontade de lutar haverá esperança de vencer."</h1>
+                            
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+            <div class="item">    
+            <div class="slider_overlay"></div>
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/slide3.jpg');">
+                    <div class="hero">
+                        <hgroup>
+                            <h1>"Não basta conquistar a sabedoria, é preciso usá-la."</h1>
+                            
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#mainCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    <div id="informacao">
+    	<div class="container">
+    		<div class="text">
+    			<h2>.</h2>
+    			<hr>
+				<p>.</p>
+				<p>.</p>
+			</div>
+			<div class="text">
+    			<h2>Informações Pessoais</h2>
+    			<hr>
+    			<p>.</p>
+			</div>
+
+        <div class="col-md-6">
+            <!-- begin panel group -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                
+                <!-- panel 1 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingOne"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h2 class="panel-title"><h2>Informação</h2></h2>
+                        </div>
+                    </span>
+                    
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                        <!-- Tab content goes here -->
+                        <p>Nathan Ferreira Rodrigues Costa  </p>
+						<p>Brasileiro</p>
+						<p>Solteiro </p>
+						<p>04/09/1993 - 24 anos</p>
+                        </div>
+                    </div>
+                </div> 
+                <!-- / panel 1 -->
+                
+                <!-- panel 2 -->
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h2 class="panel-title collapsed"><h2>Contato</h2></h2>
+                        </div>
+                    </span>
+
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+						<!-- Tab content goes here -->
+						<p>Cel:+55 11 99639-6923</p>
+                        <p>WathsApp: +55 11 94211-2135</p>
+						<p>Recado: Dilair +55 11 99576-2423 </p>
+						<p>Email:nathan.frc@hotmail.com</p>
+						<p>Cep:03371-000</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- / panel 2 -->
+                
+                <!--  panel 3--> 
+                <div class="panel panel-default">
+                  <!--  wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingThree"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4 class="panel-title"><h2>Formação</h2></h4>
+                        </div>
+                    </span>
+
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                          <!-- tab content goes here -->
+                        <p>Graduando em Ciência da Computação</p> 
+							<p>Faculdade Carlos Drummond de Andrade</p>
+							<p> 7º período</p>
+							<p>Momento trancado esperando voltar trabalhar</p>
+                        <p><a class="btn btn-mini" href="https://drummond.com.br/" target="_blank">Site da Faculdade <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+                          </div>
+                        </div>
+					  </div>
+					  <!-- treinamento-->
+					  <div class="panel panel-default">
+							<!--  wrap panel heading in span to trigger image change as well as collapse -->
+							  <span class="side-tab" data-target="#tab4" data-toggle="tab" role="tab" aria-expanded="false">
+								  <div class="panel-heading" role="tab" id="headingFour"  class="collapsed" data-toggle="collapse"
+								   data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+									  <h4 class="panel-title"><h2>Treinamentos </h2></h4>
+								  </div>
+							  </span>
+		  
+								  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									<div class="panel-body">
+									<!-- tab content goes here -->
+								
+									<p>Formação Cobol (Escola de Programadores)
+									ZOS,Cobol,VSAM,TSO,JCL e DB2</p>
+									<p>Formação Oracle 11g (IBTA Instituto Brasileiro de tecnologia avançada)</p>
+									<p>Java EE Basic (DevMedia)</p>
+									<p>Java EE Avançado (DevMedia)</p>
+								<p>	PHP básico (DevMedia)</p>
+								<p>PHP Avançado (DevMedia)</p>
+								<p>Bitcoins (FOXBits)</p>
+								  <p><a class="btn btn-mini" href="http://www.escoladeprogramadores.com.br/" target="_blank">Site da Escola de Programadores <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+								  <p><a class="btn btn-mini" href="http://www.unibta.edu.br/" target="_blank">Site da IBTA  <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+								  <p><a class="btn btn-mini" href="http://www.escoladeprogramadores.com.br/" target="_blank">Site da DEVMedia <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+									</div>
+								  </div>
+								</div>
+
+								  <!-- treinamento-->
+					  <div class="panel panel-default">
+							<!--  wrap panel heading in span to trigger image change as well as collapse -->
+							  <span class="side-tab" data-target="#tab4" data-toggle="tab" role="tab" aria-expanded="false">
+								  <div class="panel-heading" role="tab" id="headingFour"  class="collapsed" data-toggle="collapse"
+								   data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+									  <h4 class="panel-title"><h2>Línguas</h2></h4>
+								  </div>
+							  </span>
+		  
+								  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									<div class="panel-body">
+									<!-- tab content goes here -->
+								
+									<p>Inglês-Básico</p>
+									<p>Espanhol - avançado com vivencia fora do páis</p>
+									
+								
+									</div>
+								  </div>
+								</div>
+					  
+				</div>
+				
+				<a class="btn btn-mini" href="curriculo.pdf" target="_blank"><h3>Imprimir Curricúlo <i class="fa fa-angle-double-right" aria-hidden="true"></h3></i></a>
+			 </div> 
+			 
+             
+   	 		 <div class="col-md-6">
+    			
+					
+			    		<div class="item active">
+			    			<img src="images/nathan.jpg" >
+			    		</div>
+			  
+					
+				</div>
+			</div>
+             
+        </div>
+    </div>
+    
+    
+    <div id="portfolio">
+    	<div class="container">
+    		<h2>Súmario</h2>
+    		<p>Graduando em Ciência da Computação, participa de várias atividades no ambiente acadêmico, como monitoria.</p>
+      			<div class="portfolioFilter">  
+        			<ul class="Portfolio-nav wow fadeIn delay-02s">
+            			<li><a href="#" data-filter=".webdesign" >IDEs</a></li>
+            			<li><a href="#" data-filter=".appdevelopment" >Sistema Operacionais</a></li>
+						<li><a href="#" data-filter=".graphicdesign" >Linguagens e Framework</a></li>
+						<li><a href="#" data-filter=".graphicdesign2" >Banco de Dados</a></li>
+						<li><a href="#" data-filter="*" class="current" >Todos</a></li>
+        			</ul>
+       			</div> 
+		</div>
+		
+		
+    	
+       		<div class="portfolioContainer">
+				
+				<div class="Portfolio-box webdesign">
+					<a href="#" data-toggle="tooltip" title="Visual Studio Code"><img src="images/vCode.png" alt=""></a>	
+			   </div>
+			  
+			   <div class="Portfolio-box webdesign">
+					<a href="#" data-toggle="tooltip" title="Eclipse"><img src="images/eclipse.jpg" alt="" ></a>	
+			 </div>
+			 <div class="Portfolio-box webdesign">
+					<a href="#" data-toggle="tooltip" title="Bracktes"><img src="images/brack.png" alt=""></a>	
+			</div>
+			<div class="Portfolio-box webdesign">
+					<a href="#" data-toggle="tooltip" title="GitHub"><img src="images/git.jpg" alt=""></a>	
+	      </div>
+            	<div class=" Portfolio-box appdevelopment">
+                	<a href="#" data-toggle="tooltip" title="Windows"><img src="images/wind.jpg" alt=""></a>	
+                </div>
+                
+                <div class=" Portfolio-box appdevelopment">
+                	<a href="#" data-toggle="tooltip" title="Red-Hat"><img src="images/redhat.png" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box appdevelopment">
+						<a href="#" data-toggle="tooltip" title="Ubuntu"><img src="images/ubuntu.jpg" alt=""></a>	
+					</div>
+              
+                <div class=" Portfolio-box graphicdesign">
+                	<a href="#" data-toggle="tooltip" title="Java"><img src="images/java.png" alt=""></a>	
+                </div>
+                <div class=" Portfolio-box graphicdesign">
+                	<a href="#" data-toggle="tooltip" title="PHP"><img src="images/php.jpg" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign">
+					<a href="#" data-toggle="tooltip" title="PL/SQL"><img src="images/plsql.jpg" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign">
+					<a href="#" data-toggle="tooltip" title="SQL"><img src="images/sql.png" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign">
+					<a href="#" data-toggle="tooltip" title="JavaScript"><img src="images/javacsr.jpg" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign">
+			     	<a href="#" data-toggle="tooltip" title="HTML"><img src="images/html.png" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign">
+					<a href="#" data-toggle="tooltip" title="Json"><img src="images/json.png" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign">
+					<a href="#" data-toggle="tooltip" title="Bootstrap"><img src="images/broot.png" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign">
+					<a href="#" data-toggle="tooltip" title="Node js"><img src="images/nodejs.png" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign">
+					<a href="#" data-toggle="tooltip" title="Laravel"><img src="images/laravel.png" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign2">
+					<a href="#" data-toggle="tooltip" title="MySql"><img src="images/mysql.jpg" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign2">
+					<a href="#" data-toggle="tooltip" title="Oracle"><img src="images/oracle.jpg" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign2">
+					<a href="#" data-toggle="tooltip" title="SqlServer"><img src="images/sqlserver.png" alt=""></a>	
+				</div>
+				<div class=" Portfolio-box graphicdesign2">
+					<a href="#" data-toggle="tooltip" title="Firebase"><img src="images/firebase.jpg" alt=""></a>	
+				</div>
+    		</div>
+		
+			<script>
+					$(document).ready(function(){
+						$('[data-toggle="tooltip"]').tooltip();   
+					});
+			</script>
+    </div>
+    
+    
+    <div id="blog">
+    	<div class="container">
+    		<h2>Experiência  <span>Profissional</span></h2>
+    		<hr>
+    		<div class="carousel slide" id="myCarousel">
+        		<div class="carousel-inner">
+           			<div class="item active">
+            		 	<ul class="thumbnails">
+                        	<li class="col-sm-4">
+    							<div class="fff">
+									<div class="thumbnail">
+										<a href="#"><img src="images/ncom.jpg" alt=""></a>
+									</div>
+									<div class="caption">
+										<h4>N.com telecomunicações e informática Ltda.</h4>
+										<p>Tecníco Instalador </p>
+										<p>Inicio: 09/2012 Fim: 12/2016</p>
+										<p>Descrição</p>
+										<p>Criação de projetos de redes de dados e telefonia, montagem de equipamentos de
+											 telecomunicações como PABX e servidores, passagens de cabos UTP CAT5,CAT6 e
+											  montagem de hacks, suporte ao cliente todos os níveis e programação
+											 avançada de equipamentos pabx, siemens, unify, panasonic.</p>
+										
+											<a class="btn btn-mini" href="http://www.n.com.br" target="_blank">Site da Empresa <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+									</div>
+                           	 	</div>
+                        	</li>
+                        	<li class="col-sm-4">
+								<div class="fff">
+									<div class="thumbnail">
+										<a href="#"><img src="images/b2b.jpg" alt=""></a>
+									</div>
+									<div class="caption">
+										<h4>B2B Inovacion</h4>
+										<p>Programador PHP Junior </p>
+										<p>Inicio: 06/2017 Fim: 12/2017</p>
+										<p>Descrição</p>
+										<p>Startup sem frutos lucrativos de um aplicativo que buscava prestadores de serviços
+										 mais perto das pessoas. 
+										 Programação Beck-end e front-end usando  PHP,HTML,CSS,Blade,java Script, Json,MySQL,Laravel,Firebase.
+										</p>
+									</div>
+                            	</div>
+							</li>
+							
+							<li class="col-sm-4">
+								<div class="fff">
+									<div class="thumbnail">
+										<a href="#"><img src="images/teledata.jpg" alt=""></a>
+									</div>
+									<div class="caption">
+										<h4>Teledada Tecnológia em conectividade</h4>
+										<p>Analista Desenvolvedor De Sistemas Junior</p>
+										<p>Inicio: 06/2018 até no momento</p>
+										<p>Descrição</p>
+										<p>Desenvolvimento de sofwares de auto-atendimento para sistemas bancários na Caixa Econômica Federal
+											com integrações com IBM mainframe usando protocologo SOAP com ISO8583,PHP,CXP e banco de dados Postgresql 
+											no ambiente Desenolvimento Linux. 
+											Usando metodologia scrum para entregas de projetos
+										</p>
+
+										<a class="btn btn-mini" href="http://www.teledatabrasil.com.br/" target="_blank">Site da Empresa <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+									</div>
+                            	</div>
+                        	</li>
+                        	
+                    	</ul>
+             		</div><!-- /Slide1 --> 
+            		
+        		</div>
+        
+       
+	   		<nav>
+				<ul class="control-box pager">
+					<li><a data-slide="prev" href="#myCarousel" class=""><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+					<li><a data-slide="next" href="#myCarousel" class=""><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+				</ul>
+			</nav>
+	   		<!-- /.control-box -->   
+                              
+   	 		</div><!-- /#myCarousel -->
+    	</div>
+    </div>
+    
+    
+    <div id="contact">
+    	<div class="container">
+    		<h2>Contato direto</h2>  
+    		<p>Envia uma mensagem</p>
+    		<div class="col-md-6">
+    			<div class="contact-form">
+					<form action="#" method="post">
+						<input id="name" name="name" type="text" placeholder="Nome:" required>
+						<input id="email" name="email" type="text" placeholder="Email:" required>
+						<input id="subject" name="subject" type="subject" placeholder="Assunto:" required>
+						<textarea id="message" name="message" placeholder="Sua mensagem:" rows="5" required></textarea>
+						<br>
+						<button name="submit" id="submit" type="submit">Send Message</button>
+					</form>
+				</div>  
+			</div>	
+			<div class="col-md-6">
+				<div class="image">
+					<img src="http://inhabitat.com/wp-content/blogs.dir/1/files/2015/10/The-R%C3%B6nesans-Mecidiyek%C3%B6y-Office-by-Muum-1.jpg" class="img-responsive">
+				</div>
+			</div>
+    	</div>
+    	
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9187873302385!2d-46.550465085022005!3d-23.57136008467801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5dcefdb7479d%3A0xe65bdb4923df3bc1!2sAv.+Montemagno%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1527052340197" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
+    </div>
+    
+    
+  <!--  <div id="subscribe">
+    	<div class="container">
+    	    <h2>Contato</h2>
+    	    <p>Envia uma mensagem</p>
+			<div class="col-md-8 col-md-offset-2">
+             	<form action="#">
+              		<div class="input-group">
+                 		<input class="btn btn-lg" name="email" id="email" type="email" placeholder="Enter your email address" required>
+                 		<button class="btn btn-info btn-lg" type="submit">Submit</button>
+             		 </div>
+            	</form>
+			</div>  
+    	</div>
+    </div>-->
+    
+	<div class="footer">
+  		<div class="container">
+   			<p class="text-muted">All Rights Reserved <a href="#">Nathan Ferreira Rodrigues Costa</a></p>
+  		</div>
+	</div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/jquery.isotope.js"></script>
+    
+    <script src="js/jquery.scrollUp.min.js"></script>
+    
+    
+	<script type="text/javascript">
+	
+	$('a[href^="#"]').on('click', function(event) {
+    	var target = $(this.getAttribute('href'));
+    	if( target.length ) {
+       		event.preventDefault();
+        	$('html, body').stop().animate({
+            	scrollTop: target.offset().top
+        	}, 1000);
+    	}
+	});
+
+	</script>
+    
+    
+    <!-- Navbar Change on Scroll -->
+	<script type="text/javascript">
+		$(function(){
+ 		var shrinkHeader = 100;
+  		$(window).scroll(function() {
+    		var scroll = getCurrentScroll();
+      		if ( scroll >= shrinkHeader ) {
+           		$('.navbar-default').addClass('shrink');
+        	}
+       		else {
+            	$('.navbar-default').removeClass('shrink');
+        	}
+  		});
+		function getCurrentScroll() {
+    		return window.pageYOffset || document.documentElement.scrollTop;
+    	}
+	});
+
+	</script>    
+
+
+	<!-- Portfolio Isotope Settings -->
+	<script type="text/javascript">
+
+	$(window).load(function(){
+  
+  
+ 	 var $container = $('.portfolioContainer'),
+     	$body = $('body'),
+     	colW = 375,
+      	columns = null;
+
+  
+  	$container.isotope({
+    // disable window resizing
+    	resizable: true,
+   	 	masonry: {
+        columnWidth: colW
+    	}
+  	});
+  
+  	$(window).smartresize(function(){
+    // check if columns has changed
+    	var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    	if ( currentColumns !== columns ) {
+      	// set new column count
+      	columns = currentColumns;
+      	// apply width to container manually, then trigger relayout
+      	$container.width( columns * colW )
+        	.isotope('reLayout');
+    	}
+    
+  	}).smartresize(); // trigger resize to set container width
+  	$('.portfolioFilter a').click(function(){
+        	$('.portfolioFilter .current').removeClass('current');
+        	$(this).addClass('current');
+ 
+        	var selector = $(this).attr('data-filter');
+        	$container.isotope({
+			
+            filter: selector,
+         });
+        	 return false;
+   	 	});
+  
+	});
+
+	</script>
+	
+	
+	<!-- Scroll To Top Settings -->
+    <script type="text/javascript">
+    
+    $(function () {
+  		$.scrollUp({
+    		scrollName: 'scrollUp', // Element ID
+    		topDistance: '300', // Distance from top before showing element (px)
+    		topSpeed: 600, // Speed back to top (ms)
+    		animation: 'fade', // Fade, slide, none
+    		animationInSpeed: 200, // Animation in speed (ms)
+    		animationOutSpeed: 200, // Animation out speed (ms)
+    		activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    		scrollImg: true,
+  		});
+	});
+    
+    </script>
+
+	
+</body>
+
+</html>
